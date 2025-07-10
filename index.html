@@ -1,28 +1,57 @@
-THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Farm Solutions - Smart Agriculture Technology</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading Best Farm Solutions...</p>
+        </div>
+    </div>
+
     <!-- Navigation Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="nav-brand">
-                <img src="images/logo.png" alt="Best Farm Solutions" class="logo">
-                <span class="brand-text">Best Farm Solutions</span>
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Best Farm Solutions" class="logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Best Farm Solutions</span>
+                        <span class="brand-tagline">Smart Agriculture</span>
+                    </div>
+                </div>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="#" class="nav-link active" data-tab="dashboard">Dashboard</a></li>
-                    <li><a href="#" class="nav-link" data-tab="about">About Us</a></li>
-                    <li><a href="#" class="nav-link" data-tab="contact">Contact</a></li>
-                    <li><a href="#" class="nav-link" data-tab="support">Support</a></li>
-                    <li><a href="#" class="nav-link login-btn" data-tab="login">Login</a></li>
+                    <li><a href="#" class="nav-link active" data-tab="dashboard">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a></li>
+                    <li><a href="#" class="nav-link" data-tab="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About Us</span>
+                    </a></li>
+                    <li><a href="#" class="nav-link" data-tab="contact">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact</span>
+                    </a></li>
+                    <li><a href="#" class="nav-link" data-tab="support">
+                        <i class="fas fa-headset"></i>
+                        <span>Support</span>
+                    </a></li>
+                    <li><a href="#" class="nav-link login-btn" data-tab="login">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -37,76 +66,169 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
     <main class="main-content">
         <!-- Dashboard Tab -->
         <section id="dashboard" class="tab-content active">
+            <!-- Hero Section -->
             <div class="hero-section">
+                <div class="hero-background">
+                    <img src="images/farm-hero.jpg" alt="Modern Farm" class="hero-bg-image">
+                    <div class="hero-overlay"></div>
+                </div>
                 <div class="container">
-                    <div class="hero-content">
-                        <h1>Smart Agriculture Solutions for Modern Farmers</h1>
-                        <p>Revolutionizing farming with cutting-edge technology, data analytics, and sustainable practices to maximize yield and minimize environmental impact.</p>
+                    <div class="hero-content" data-aos="fade-up">
+                        <span class="hero-badge">🌱 Revolutionary Agriculture</span>
+                        <h1 class="hero-title">
+                            Transform Your Farm with
+                            <span class="gradient-text">Smart Technology</span>
+                        </h1>
+                        <p class="hero-description">
+                            Revolutionizing farming with cutting-edge IoT sensors, AI-powered analytics, 
+                            and sustainable practices to maximize yield while minimizing environmental impact.
+                        </p>
                         <div class="hero-buttons">
-                            <button class="btn btn-primary">Get Started</button>
-                            <button class="btn btn-secondary">Watch Demo</button>
+                            <button class="btn btn-primary btn-large">
+                                <i class="fas fa-rocket"></i>
+                                Get Started Today
+                            </button>
+                            <button class="btn btn-secondary btn-large">
+                                <i class="fas fa-play"></i>
+                                Watch Demo
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2,500+</span>
+                                <span class="stat-label">Farms Connected</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Yield Increase</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">35%</span>
+                                <span class="stat-label">Water Savings</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/farm-hero.jpg" alt="Modern Farm Technology">
-                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow"></div>
                 </div>
             </div>
 
-            <div class="features-section">
+            <!-- Features Section -->
+            <div class="features-section section-padding">
                 <div class="container">
-                    <h2>Our Solutions</h2>
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Our Solutions</span>
+                        <h2 class="section-title">Comprehensive Farm Management</h2>
+                        <p class="section-description">
+                            Advanced technology solutions designed to optimize every aspect of your farming operations
+                        </p>
+                    </div>
                     <div class="features-grid">
-                        <div class="feature-card">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="feature-icon">
                                 <i class="fas fa-seedling"></i>
                             </div>
-                            <h3>Crop Monitoring</h3>
-                            <p>Real-time monitoring of crop health using IoT sensors and satellite imagery.</p>
+                            <h3>Smart Crop Monitoring</h3>
+                            <p>Real-time monitoring of crop health using advanced IoT sensors and satellite imagery for precise agricultural insights.</p>
+                            <ul class="feature-list">
+                                <li>Real-time health tracking</li>
+                                <li>Disease early detection</li>
+                                <li>Growth pattern analysis</li>
+                            </ul>
                         </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="feature-icon">
                                 <i class="fas fa-cloud-rain"></i>
                             </div>
                             <h3>Weather Analytics</h3>
-                            <p>Advanced weather forecasting and climate analysis for optimal farming decisions.</p>
+                            <p>Advanced weather forecasting and climate analysis powered by machine learning for optimal farming decisions.</p>
+                            <ul class="feature-list">
+                                <li>7-day weather forecasts</li>
+                                <li>Climate risk assessment</li>
+                                <li>Optimal planting windows</li>
+                            </ul>
                         </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                             <div class="feature-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
                             <h3>Yield Optimization</h3>
-                            <p>AI-powered recommendations to maximize crop yield and reduce resource waste.</p>
+                            <p>AI-powered recommendations and analytics to maximize crop yield while reducing resource waste and costs.</p>
+                            <ul class="feature-list">
+                                <li>Predictive yield modeling</li>
+                                <li>Resource optimization</li>
+                                <li>Cost reduction strategies</li>
+                            </ul>
                         </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                             <div class="feature-icon">
                                 <i class="fas fa-water"></i>
                             </div>
                             <h3>Smart Irrigation</h3>
-                            <p>Automated irrigation systems that optimize water usage based on soil conditions.</p>
+                            <p>Automated irrigation systems that optimize water usage based on soil moisture and weather conditions.</p>
+                            <ul class="feature-list">
+                                <li>Automated water scheduling</li>
+                                <li>Soil moisture tracking</li>
+                                <li>Water conservation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Stats Section -->
             <div class="stats-section">
+                <div class="stats-background">
+                    <img src="images/farm-background.jpg" alt="Farm Background" class="stats-bg-image">
+                    <div class="stats-overlay"></div>
+                </div>
                 <div class="container">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">2,500+</div>
-                            <div class="stat-label">Farms Connected</div>
+                    <div class="stats-content" data-aos="fade-up">
+                        <h2>Proven Results Across Thousands of Farms</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tractor"></i>
+                                </div>
+                                <div class="stat-number" data-count="2500">0</div>
+                                <div class="stat-label">Farms Connected</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="stat-number" data-count="40">0</div>
+                                <div class="stat-label">% Yield Increase</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-droplet"></i>
+                                </div>
+                                <div class="stat-number" data-count="35">0</div>
+                                <div class="stat-label">% Water Savings</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-number" data-count="99">0</div>
+                                <div class="stat-label">% Uptime</div>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">40%</div>
-                            <div class="stat-label">Yield Increase</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">35%</div>
-                            <div class="stat-label">Water Savings</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">99.9%</div>
-                            <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section section-padding">
+                <div class="container">
+                    <div class="cta-content" data-aos="fade-up">
+                        <h2>Ready to Transform Your Farm?</h2>
+                        <p>Join thousands of farmers who have already revolutionized their operations with our smart agriculture solutions.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary btn-large">Start Free Trial</button>
+                            <button class="btn btn-outline btn-large">Schedule Demo</button>
                         </div>
                     </div>
                 </div>
@@ -115,48 +237,109 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
 
         <!-- About Us Tab -->
         <section id="about" class="tab-content">
-            <div class="container">
-                <div class="about-header">
-                    <h1>About Best Farm Solutions</h1>
-                    <p class="lead">Leading the agricultural revolution with innovative technology and sustainable practices.</p>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Our Mission</h2>
-                        <p>At Best Farm Solutions, we're committed to transforming agriculture through cutting-edge technology. Our mission is to empower farmers with intelligent tools that increase productivity, reduce environmental impact, and ensure food security for future generations.</p>
-                        
-                        <h2>What We Do</h2>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Precision Agriculture Technology</li>
-                            <li><i class="fas fa-check"></i> IoT Sensor Networks</li>
-                            <li><i class="fas fa-check"></i> AI-Powered Analytics</li>
-                            <li><i class="fas fa-check"></i> Sustainable Farming Practices</li>
-                            <li><i class="fas fa-check"></i> Farm Management Software</li>
-                        </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/about-farm.jpg" alt="Modern Agriculture">
+            <div class="about-hero">
+                <div class="container">
+                    <div class="about-hero-content" data-aos="fade-up">
+                        <span class="section-badge">About Us</span>
+                        <h1>Leading the Agricultural Revolution</h1>
+                        <p class="lead">We're passionate about transforming agriculture through innovative technology and sustainable practices that benefit both farmers and the environment.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="team-section">
-                    <h2>Our Team</h2>
+            <div class="about-content section-padding">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text" data-aos="fade-right">
+                            <h2>Our Mission</h2>
+                            <p>At Best Farm Solutions, we're committed to revolutionizing agriculture through cutting-edge technology. Our mission is to empower farmers with intelligent tools that increase productivity, reduce environmental impact, and ensure food security for future generations.</p>
+                            
+                            <h3>What Sets Us Apart</h3>
+                            <div class="feature-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Advanced AI & Machine Learning</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Sustainable Farming Practices</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Real-time Data Analytics</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>24/7 Expert Support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image" data-aos="fade-left">
+                            <img src="images/about-farm.jpg" alt="Modern Agriculture">
+                            <div class="image-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Award-Winning Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section section-padding bg-light">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Our Team</span>
+                        <h2>Meet the Experts</h2>
+                        <p>Our diverse team of agricultural experts, engineers, and data scientists work together to create innovative solutions.</p>
+                    </div>
                     <div class="team-grid">
-                        <div class="team-member">
-                            <img src="images/team1.jpg" alt="Team Member">
-                            <h3>John Smith</h3>
-                            <p>CEO & Founder</p>
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="team-image">
+                                <img src="images/team1.jpg" alt="John Smith">
+                                <div class="team-overlay">
+                                    <div class="social-links">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>John Smith</h3>
+                                <p class="team-role">CEO & Founder</p>
+                                <p class="team-bio">15+ years in agricultural technology with a passion for sustainable farming innovations.</p>
+                            </div>
                         </div>
-                        <div class="team-member">
-                            <img src="images/team2.jpg" alt="Team Member">
-                            <h3>Sarah Johnson</h3>
-                            <p>Head of Technology</p>
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="team-image">
+                                <img src="images/team2.jpg" alt="Sarah Johnson">
+                                <div class="team-overlay">
+                                    <div class="social-links">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>Sarah Johnson</h3>
+                                <p class="team-role">Head of Technology</p>
+                                <p class="team-bio">AI and IoT specialist leading our technical innovation and product development teams.</p>
+                            </div>
                         </div>
-                        <div class="team-member">
-                            <img src="images/team3.jpg" alt="Team Member">
-                            <h3>Mike Davis</h3>
-                            <p>Agricultural Specialist</p>
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="team-image">
+                                <img src="images/team3.jpg" alt="Mike Davis">
+                                <div class="team-overlay">
+                                    <div class="social-links">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>Mike Davis</h3>
+                                <p class="team-role">Agricultural Specialist</p>
+                                <p class="team-bio">Expert agronomist ensuring our solutions meet real-world farming challenges and needs.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,152 +348,207 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
 
         <!-- Contact Tab -->
         <section id="contact" class="tab-content">
-            <div class="container">
-                <div class="contact-header">
-                    <h1>Contact Us</h1>
-                    <p class="lead">Get in touch with our team to learn how we can help transform your farming operations.</p>
-                </div>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Address</h3>
-                                <p>123 Agricultural Drive<br>Farm Valley, CA 95123</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Phone</h3>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <p>info@bestfarmsolutions.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Business Hours</h3>
-                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
-                            </div>
-                        </div>
+            <div class="contact-hero">
+                <div class="container">
+                    <div class="contact-hero-content" data-aos="fade-up">
+                        <span class="section-badge">Contact Us</span>
+                        <h1>Get in Touch</h1>
+                        <p class="lead">Ready to transform your farming operations? Our team is here to help you get started with smart agriculture solutions.</p>
                     </div>
-                    
-                    <form class="contact-form">
-                        <h2>Send us a Message</h2>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+            </div>
+
+            <div class="contact-content section-padding">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info" data-aos="fade-right">
+                            <h2>Let's Start a Conversation</h2>
+                            <p>Whether you're a small family farm or a large agricultural operation, we have solutions tailored to your needs.</p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Phone</h4>
+                                        <p>+1 (555) 123-4567</p>
+                                        <span>Mon-Fri 8AM-6PM PST</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Email</h4>
+                                        <p>info@bestfarmsolutions.com</p>
+                                        <span>We'll respond within 24 hours</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Office</h4>
+                                        <p>123 Agricultural Drive<br>Farm Valley, CA 95123</p>
+                                        <span>Visit us for a demo</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                        
+                        <form class="contact-form" data-aos="fade-left">
+                            <div class="form-header">
+                                <h3>Send us a Message</h3>
+                                <p>Fill out the form below and we'll get back to you soon.</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="farmSize">Farm Size</label>
+                                <select id="farmSize" name="farmSize">
+                                    <option value="">Select farm size</option>
+                                    <option value="small">Small (1-50 acres)</option>
+                                    <option value="medium">Medium (50-500 acres)</option>
+                                    <option value="large">Large (500+ acres)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your farming needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Support Tab -->
         <section id="support" class="tab-content">
-            <div class="container">
-                <div class="support-header">
-                    <h1>Support Center</h1>
-                    <p class="lead">Find answers to your questions and get the help you need.</p>
+            <div class="support-hero">
+                <div class="container">
+                    <div class="support-hero-content" data-aos="fade-up">
+                        <span class="section-badge">Support Center</span>
+                        <h1>We're Here to Help</h1>
+                        <p class="lead">Find answers, get support, and learn how to make the most of your smart farming solutions.</p>
+                    </div>
                 </div>
-                
-                <div class="support-content">
+            </div>
+
+            <div class="support-content section-padding">
+                <div class="container">
                     <div class="support-categories">
-                        <div class="support-category">
+                        <div class="support-category" data-aos="fade-up" data-aos-delay="100">
                             <div class="category-icon">
-                                <i class="fas fa-book"></i>
+                                <i class="fas fa-book-open"></i>
                             </div>
                             <h3>Documentation</h3>
-                            <p>Comprehensive guides and API documentation</p>
-                            <a href="#" class="btn btn-outline">View Docs</a>
+                            <p>Comprehensive guides, API documentation, and setup instructions for all our products.</p>
+                            <a href="#" class="btn btn-outline">Browse Docs</a>
                         </div>
                         
-                        <div class="support-category">
+                        <div class="support-category" data-aos="fade-up" data-aos-delay="200">
                             <div class="category-icon">
                                 <i class="fas fa-video"></i>
                             </div>
                             <h3>Video Tutorials</h3>
-                            <p>Step-by-step video guides for all features</p>
+                            <p>Step-by-step video guides covering installation, configuration, and advanced features.</p>
                             <a href="#" class="btn btn-outline">Watch Videos</a>
                         </div>
                         
-                        <div class="support-category">
+                        <div class="support-category" data-aos="fade-up" data-aos-delay="300">
                             <div class="category-icon">
-                                <i class="fas fa-comments"></i>
+                                <i class="fas fa-users"></i>
                             </div>
                             <h3>Community Forum</h3>
-                            <p>Connect with other farmers and share experiences</p>
+                            <p>Connect with other farmers, share experiences, and get answers from the community.</p>
                             <a href="#" class="btn btn-outline">Join Forum</a>
                         </div>
                         
-                        <div class="support-category">
+                        <div class="support-category" data-aos="fade-up" data-aos-delay="400">
                             <div class="category-icon">
                                 <i class="fas fa-headset"></i>
                             </div>
-                            <h3>Live Chat</h3>
-                            <p>Get instant help from our support team</p>
+                            <h3>Live Support</h3>
+                            <p>Get instant help from our expert support team available 24/7 for urgent issues.</p>
                             <a href="#" class="btn btn-outline">Start Chat</a>
                         </div>
                     </div>
                     
                     <div class="faq-section">
-                        <h2>Frequently Asked Questions</h2>
-                        <div class="faq-list">
-                            <div class="faq-item">
+                        <div class="section-header" data-aos="fade-up">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Find quick answers to common questions about our smart farming solutions.</p>
+                        </div>
+                        
+                        <div class="faq-container">
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="faq-question">
                                     <h3>How do I set up my first farm monitoring system?</h3>
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Setting up your farm monitoring system is easy. First, contact our team to schedule a site assessment. We'll help you determine the best sensor placement and configure your dashboard for optimal monitoring.</p>
+                                    <p>Setting up your farm monitoring system is straightforward. First, contact our team to schedule a free site assessment. We'll analyze your farm layout, crop types, and specific needs. Then we'll create a customized sensor placement plan and configure your dashboard for optimal monitoring. Our technicians will handle the installation and provide comprehensive training.</p>
                                 </div>
                             </div>
                             
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                                 <div class="faq-question">
-                                    <h3>What types of crops can be monitored?</h3>
+                                    <h3>What types of crops can be monitored with your system?</h3>
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Our system supports monitoring for all major crop types including grains, vegetables, fruits, and specialty crops. The system automatically adjusts monitoring parameters based on your crop selection.</p>
+                                    <p>Our system supports monitoring for all major crop types including grains (wheat, corn, rice), vegetables (tomatoes, lettuce, peppers), fruits (apples, grapes, berries), and specialty crops (herbs, flowers). The system automatically adjusts monitoring parameters, alert thresholds, and recommendations based on your specific crop selection and growth stages.</p>
                                 </div>
                             </div>
                             
-                            <div class="faq-item">
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                                 <div class="faq-question">
-                                    <h3>Is there a mobile app available?</h3>
+                                    <h3>Is there a mobile app available for monitoring?</h3>
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Yes! Our mobile app is available for both iOS and Android devices. You can monitor your farm, receive alerts, and access analytics from anywhere.</p>
+                                    <p>Yes! Our comprehensive mobile app is available for both iOS and Android devices. You can monitor all your farm metrics in real-time, receive instant alerts and notifications, access detailed analytics and reports, control irrigation systems remotely, and even capture field photos for documentation. The app works offline and syncs when connectivity is restored.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="faq-question">
+                                    <h3>What kind of support is included with my subscription?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>All subscriptions include 24/7 technical support, regular system updates, and access to our online knowledge base. Premium plans include priority support, dedicated account management, on-site visits, and personalized training sessions. We also provide seasonal optimization consultations to help you maximize your system's effectiveness throughout the growing season.</p>
                                 </div>
                             </div>
                         </div>
@@ -321,44 +559,77 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
 
         <!-- Login Tab -->
         <section id="login" class="tab-content">
-            <div class="container">
-                <div class="login-container">
-                    <div class="login-form-container">
-                        <div class="login-header">
-                            <h1>Welcome Back</h1>
-                            <p>Sign in to access your farm dashboard</p>
+            <div class="login-section">
+                <div class="login-background">
+                    <img src="images/login-farm.jpg" alt="Farm Login Background" class="login-bg-image">
+                    <div class="login-overlay"></div>
+                </div>
+                <div class="container">
+                    <div class="login-container">
+                        <div class="login-card" data-aos="fade-up">
+                            <div class="login-header">
+                                <div class="login-logo">
+                                    <img src="images/logo.png" alt="Best Farm Solutions">
+                                </div>
+                                <h1>Welcome Back</h1>
+                                <p>Sign in to access your smart farming dashboard</p>
+                            </div>
+                            
+                            <form class="login-form">
+                                <div class="form-group">
+                                    <label for="loginEmail">Email Address</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="loginPassword">Password</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                                        <button type="button" class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-options">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" name="remember">
+                                        <span class="checkmark"></span>
+                                        Remember me
+                                    </label>
+                                    <a href="#" class="forgot-password">Forgot Password?</a>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    Sign In
+                                </button>
+                                
+                                <div class="divider">
+                                    <span>or</span>
+                                </div>
+                                
+                                <div class="social-login">
+                                    <button type="button" class="btn btn-social btn-google">
+                                        <i class="fab fa-google"></i>
+                                        Continue with Google
+                                    </button>
+                                    <button type="button" class="btn btn-social btn-microsoft">
+                                        <i class="fab fa-microsoft"></i>
+                                        Continue with Microsoft
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <div class="login-footer">
+                                <p>Don't have an account? <a href="#" class="signup-link">Sign up for free</a></p>
+                                <p class="help-text">Need help? <a href="#" data-tab="support">Contact Support</a></p>
+                            </div>
                         </div>
-                        
-                        <form class="login-form">
-                            <div class="form-group">
-                                <label for="username">Username or Email</label>
-                                <input type="text" id="username" name="username" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                            
-                            <div class="form-options">
-                                <label class="checkbox-container">
-                                    <input type="checkbox" name="remember">
-                                    <span class="checkmark"></span>
-                                    Remember me
-                                </label>
-                                <a href="#" class="forgot-password">Forgot Password?</a>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-full">Sign In</button>
-                        </form>
-                        
-                        <div class="login-footer">
-                            <p>Don't have an account? <a href="#" class="signup-link">Sign up here</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="login-image">
-                        <img src="images/login-farm.jpg" alt="Farm Login">
                     </div>
                 </div>
             </div>
@@ -370,40 +641,69 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Best Farm Solutions</h3>
-                    <p>Transforming agriculture through technology and innovation.</p>
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Best Farm Solutions">
+                        <h3>Best Farm Solutions</h3>
+                    </div>
+                    <p>Transforming agriculture through innovative technology and sustainable practices for a better tomorrow.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#" data-tab="dashboard">Dashboard</a></li>
-                        <li><a href="#" data-tab="about">About Us</a></li>
-                        <li><a href="#" data-tab="contact">Contact</a></li>
-                        <li><a href="#" data-tab="support">Support</a></li>
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Crop Monitoring</a></li>
+                        <li><a href="#">Weather Analytics</a></li>
+                        <li><a href="#">Yield Optimization</a></li>
+                        <li><a href="#">Smart Irrigation</a></li>
+                        <li><a href="#">Farm Management</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@bestfarmsolutions.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Farm Valley, CA 95123</p>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-tab="about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-tab="support">Help Center</a></li>
+                        <li><a href="#" data-tab="contact">Contact Us</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">System Status</a></li>
+                    </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Best Farm Solutions. All rights reserved.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Best Farm Solutions. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
